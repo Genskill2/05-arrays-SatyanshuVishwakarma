@@ -45,3 +45,19 @@ int mode(int arr[],int n) {
 	}
 	return nmode;
 }
+
+
+int factors(int n,int ret[]) {
+	int x=0;
+	for(int i=2;i<=n;i++) {
+		while(n%i==0) {
+			ret[x]=i;
+			x++;
+			n=n/i;
+		}
+	}
+	return x;
+}
+
+
+
