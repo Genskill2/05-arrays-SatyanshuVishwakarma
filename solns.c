@@ -19,3 +19,12 @@ int min(int x[],int count) {
 	}
 	return sml;
 }
+
+
+float average(int arr[],int num) {
+	int sum=arr[0];
+	for(int i=0;i<num-1;i++) {
+		int sum =sum + arr[i];
+	}
+	return (float)(sum/num);
+}
