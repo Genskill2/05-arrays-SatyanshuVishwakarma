@@ -28,3 +28,21 @@ float average(int arr[],int num) {
 	}
 	return (float)(sum/num);
 }
+
+
+int mode(int arr[],int n) {
+	int x=1,nmode=arr[0];
+	
+	for(int i=0;i<n-1;i++) {
+		int count=1;
+		for(int j=i+1;j<n;j++) {
+			if(arr[i]==a[j])
+				count++;
+		}
+		if(count>x){
+			x=count;
+			nmode=arr[i];
+		}
+	}
+	return nmode;
+}
